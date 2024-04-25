@@ -7,15 +7,16 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum TaskStatus {
-    IN_PROGRESS
+enum TodoStatus {
+    NEW
+    ACTIVE
     PAUSED
     COMPLETED
 }
 
-model Task {
+model Todo {
     id Int @id @default(autoincrement())
     name String
     description String
-    status TaskStatus
+    status TodoStatus
 }
