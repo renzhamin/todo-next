@@ -1,4 +1,12 @@
-## Setup Database
+## Development Setup
+
+Install packages with,
+
+```sh
+bun install
+```
+
+### Setup Database
 
 1. Start the postgres container. Make sure to populate `.dockerenv`.
 
